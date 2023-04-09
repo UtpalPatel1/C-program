@@ -1,0 +1,26 @@
+#include<stdio.h>
+void main()
+{
+	int i,fac,sum=0;
+	printf("Enter the number to find their factors");
+	scanf("%d",&fac);
+	for(i=1;i<=fac/2;i++)
+	{
+		if(fac%i==0)
+		{	
+		printf("%d\t",i);
+		sum=sum+i;
+		}
+	}
+	printf("\n%d",sum);
+		if(fac==sum)
+		{
+			printf("\nPerfect number");
+		}
+		else
+		{
+			printf("\nNot perfect number");
+		}
+	
+	
+}
